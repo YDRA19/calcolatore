@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuratore di Porte Interne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Configuratore di Porte Interne</h1>
+    
+    <!-- Form per le opzioni della porta -->
+    <form id="door-configurator">
+      <label for="stile-porta">Stile della porta:</label>
+      <select id="stile-porta">
+        <option value="stile1">Stile 1</option>
+        <option value="stile2">Stile 2</option>
+        <option value="stile3">Stile 3</option>
+      </select>
+
+      <label for="colore-porta">Colore:</label>
+      <select id="colore-porta">
+        <option value="bianco">Bianco</option>
+        <option value="legno">Legno</option>
+        <option value="nero">Nero</option>
+      </select>
+
+      <label for="maniglia-porta">Tipo di maniglia:</label>
+      <select id="maniglia-porta">
+        <option value="standard">Standard</option>
+        <option value="moderna">Moderna</option>
+        <option value="vintage">Vintage</option>
+      </select>
+
+      <!-- Aggiungi altri menu a tendina per altre opzioni -->
+
+      <!-- Bottone per visualizzare la porta configurata -->
+      <button type="button" onclick="visualizzaPorta()">Visualizza Porta</button>
+    </form>
+
+    <!-- Container per mostrare la porta configurata -->
+    <div id="porta-configurata">
+      <!-- Immagine o rappresentazione grafica della porta -->
+      <img id="immagine-porta" src="" alt="Porta configurata">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

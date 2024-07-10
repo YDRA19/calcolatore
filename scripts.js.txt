@@ -1,0 +1,14 @@
+function visualizzaPorta() {
+  // Recupera le selezioni degli utenti
+  var stilePorta = document.getElementById("stile-porta").value;
+  var colorePorta = document.getElementById("colore-porta").value;
+  var manigliaPorta = document.getElementById("maniglia-porta").value;
+
+  // Costruisci il percorso dell'immagine in base alle selezioni
+  var imagePath = `images/${stilePorta}-${colorePorta}-${manigliaPorta}.jpg`;
+
+  // Aggiorna l'immagine della porta
+  var portaImg = document.getElementById("immagine-porta");
+  portaImg.src = imagePath;
+  portaImg.alt = `Porta ${stilePorta} ${colorePorta} ${manigliaPorta}`;
+}
